@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="J02_moyenne/src/|src/|j03_aire_secteur_angulaire/src/|J01_introduction/src/|J04_tri_simple_nombre/src/|J04_DIVISEUR/src/|J03_aire_volume_sphere/src/|J03_calcul_interet/src/|J04_TRI_NOMBRE/src/|J04_comparaison/src/|J03_inversion_variable /src/|J03_inversion_variable/src/|J04_annee_bissextile/src/" kind="src" path=""/>
+	<classpathentry kind="src" path="J01_introduction/src"/>
+	<classpathentry kind="src" path="J02_moyenne/src"/>
+	<classpathentry kind="src" path="j03_aire_secteur_angulaire/src"/>
+	<classpathentry kind="src" path="J03_aire_volume_sphere/src"/>
+	<classpathentry kind="src" path="J03_calcul_interet/src"/>
+	<classpathentry kind="src" path="J03_inversion_variable /src"/>
+	<classpathentry kind="src" path="J03_inversion_variable/src"/>
+	<classpathentry kind="src" path="J04_annee_bissextile/src"/>
+	<classpathentry kind="src" path="J04_comparaison/src"/>
+	<classpathentry kind="src" path="J04_DIVISEUR/src"/>
+	<classpathentry kind="src" path="J04_TRI_NOMBRE/src"/>
+	<classpathentry kind="src" path="J04_tri_simple_nombre/src"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="output" path="J02_moyenne/bin"/>
+</classpath>

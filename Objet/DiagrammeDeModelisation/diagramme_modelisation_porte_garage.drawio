@@ -1,0 +1,16 @@
+<mxfile host="app.diagrams.net" modified="2023-01-31T15:52:05.368Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="9k7UR1akc1-yJ0HzFfVI" version="20.8.10" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1194" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="RJzk-wzJVMDKsT1YZalG-0" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&lt;b&gt;Porte&lt;/b&gt;&lt;/i&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- estOuverte&amp;nbsp; : boolean&lt;br&gt;- estFerme : boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-typeMoteur : String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-ouverture&lt;/p&gt;&amp;nbsp;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp; ouvrir() : boolean&lt;br&gt;+&amp;nbsp; ferme() : boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp; ouvrirAvecTelecommande() : boolean&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&amp;nbsp;+&amp;nbsp; fermerAvecTelecommande() : boolean&lt;br&gt;&amp;nbsp;+&amp;nbsp; ouvrirAvecInterupteur(): boolean&lt;br&gt;&amp;nbsp;+&amp;nbsp; fermeAvecInterupteur&amp;nbsp;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="120" y="110" width="240" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="RJzk-wzJVMDKsT1YZalG-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&lt;u&gt;&lt;b&gt;Porte: garage&lt;/b&gt;&lt;/u&gt;&lt;/i&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-&amp;nbsp; estOuverte&amp;nbsp; :&amp;nbsp; true&lt;br&gt;- estFerme = false&lt;/p&gt;&amp;nbsp;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp; ouvrir() : boolean&lt;br&gt;+&amp;nbsp; ferme() : boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp; ouvrirAvecTelecommande() : boolean&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&amp;nbsp;+&amp;nbsp; fermerAvecTelecommande() : boolean&lt;br&gt;&amp;nbsp;+&amp;nbsp; ouvrirAvecInterupteur(): boolean&lt;br&gt;&amp;nbsp;+&amp;nbsp; fermeAvecInterupteur&amp;nbsp;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="490" y="220" width="240" height="230" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
