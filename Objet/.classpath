@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="aire_perimetre_triangle/src"/>
+	<classpathentry kind="src" path="bouteilleCorrection2/src"/>
+	<classpathentry kind="src" path="bureauReglabe/src"/>
+	<classpathentry kind="src" path="calcul_moyenne/src"/>
+	<classpathentry kind="src" path="gestion/src"/>
+	<classpathentry kind="src" path="interet/gestion/src"/>
+	<classpathentry kind="src" path="modelisation_bouteille/src"/>
+	<classpathentry kind="src" path="porteGarage/src"/>
+	<classpathentry kind="src" path="procedure/src"/>
+	<classpathentry kind="output" path="aire_perimetre_triangle/bin"/>
+</classpath>
