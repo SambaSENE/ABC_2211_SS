@@ -20,7 +20,7 @@ html{
 }
 .container-header header{
     max-width: 1100px;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
