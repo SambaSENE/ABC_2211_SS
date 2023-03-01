@@ -19,7 +19,7 @@ public class Robot {
         this.avecCargaison = avecCargaison;
     }
 
-    public int calculerDistance() {
+    private int calculerDistance() {
         Random rand = new Random();
 
         final int bMin = 0;
@@ -71,8 +71,8 @@ public class Robot {
     }
 
     public String deplacer(Deplacement deplacement) {
-        String message = "";
-        
+    	this.peutSeDeplacer = this.seDeplacer();
+    	String message = "";
         if (this.peutSeDeplacer && this.estAllume) {
             switch (deplacement) {
                 case AVANT:
