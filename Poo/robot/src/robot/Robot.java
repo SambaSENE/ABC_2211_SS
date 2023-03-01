@@ -56,23 +56,25 @@ public class Robot {
 	}
 
 	public boolean seDeplacer() {
-		int distance = calculerDistance();
+		if (!this.estAllumer) {
+			return false;
+		}else {
+			}
+			int distance = calculerDistance();
 
-		if (this.estAllumer) {
 			if (distance < 10) {
-				this.peutSeDeplacer = false;
+				peutSeDeplacer = false;
 				return false;
 			} else {
-				this.peutSeDeplacer = true;
+				peutSeDeplacer = true;
 				return true;
 			}
-		} else {
-			return false;
 		}
-	}
 
 	public String deplacer(Deplacement move) {
 		String str = "";
+		
+		
 		if (this.peutSeDeplacer && this.estAllumer) {
 
 			switch (move) {
@@ -98,20 +100,18 @@ public class Robot {
 			
 
 			}
+		}else {
+			return "Le robot ne peut pas se déplacer";
 		}
 		return str;
 	}
 
 	public boolean chargerCargaison() {
-		if (this.estAllumer) {
-			if (!this.avecCargaison) {
-				this.avecCargaison = true;
-				return true;
-			} else {
-				return false;
-			}
-		} else {
+		if (!this.estAllumer && this.avecCargaison) {
 			return false;
+		} else {
+			this.avecCargaison = true;
+			return true;
 		}
 	}
 
