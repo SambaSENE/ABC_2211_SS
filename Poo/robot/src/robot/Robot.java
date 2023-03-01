@@ -37,7 +37,7 @@ public class Robot {
 	}
 
 	public boolean allumerRobot() {
-		if (this.estAllumer == false) {
+		if (!this.estAllumer) {
 			this.estAllumer = true;
 			return true;
 		} else {
@@ -58,23 +58,23 @@ public class Robot {
 	public boolean seDeplacer() {
 		if (!this.estAllumer) {
 			return false;
-		}else {
-			}
+		} else {
 			int distance = calculerDistance();
 
-			if (distance < 10) {
-				peutSeDeplacer = false;
-				return false;
-			} else {
-				peutSeDeplacer = true;
+			if (distance > 10) {
+				this.peutSeDeplacer = true;
 				return true;
+			} else {
+				this.peutSeDeplacer = false;
+				return false;
 			}
 		}
 
+	}
+
 	public String deplacer(Deplacement move) {
 		String str = "";
-		
-		
+
 		if (this.peutSeDeplacer && this.estAllumer) {
 
 			switch (move) {
@@ -93,14 +93,13 @@ public class Robot {
 			case DROITE: {
 				str = "le robot tourne droite";
 				break;
-			}default :
-			{
+			}
+			default: {
 				break;
 			}
-			
 
 			}
-		}else {
+		} else {
 			return "Le robot ne peut pas se déplacer";
 		}
 		return str;
@@ -116,22 +115,17 @@ public class Robot {
 	}
 
 	public boolean dechargerCargaison() {
-		if (this.estAllumer) {
-			if (this.avecCargaison) {
-				this.avecCargaison = false;
-				return true;
-			} else {
-				return false;
-			}
-		} else {
+		if (!this.estAllumer && !this.avecCargaison) {
 			return false;
-
+		} else {
+			this.avecCargaison = false;
+			return true;
 		}
 	}
 
 	public String toString() {
-		return " Nom du robot :  " + nomRobot + " | alumer : " + estAllumer + " | etient : " + estAllumer
-				+ " | se deplace : " + peutSeDeplacer + "| colis charger  :" + avecCargaison;
+		return " Nom du robot :  " + nomRobot + "\n"+ " | alumer : " + estAllumer +  "\n" +" | etient : " + estAllumer + "\n"
+				+ " | se deplace: " + peutSeDeplacer +  "\n" +"| colis charger  :" + avecCargaison;
 	}
 
 }
