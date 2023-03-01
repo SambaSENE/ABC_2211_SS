@@ -72,7 +72,7 @@ public class Robot {
 
     public String deplacer(Deplacement deplacement) {
         String message = "";
-
+        
         if (this.peutSeDeplacer && this.estAllume) {
             switch (deplacement) {
                 case AVANT:
@@ -87,16 +87,20 @@ public class Robot {
                 case DROITE:
                     message = "le robot tourne à droite";
                     break;
+                default : 
+                {
+                	break;
+                }
             }
-        } else {
-            message = "Le robot ne peut pas se déplacer";
-        }
+        } 
+        	
+        	return message;
+        
 
-        return message;
     }
 
     public boolean chargerCargaison() {
-        if (!this.estAllume && !this.avecCargaison) {
+        if (this.estAllume && !this.avecCargaison) {
             this.avecCargaison = true;
             return true;
         } else {
@@ -105,7 +109,7 @@ public class Robot {
     }
 
     public boolean dechargerCargaison() {
-        if (!this.estAllume && this.avecCargaison) {
+        if (this.estAllume && this.avecCargaison) {
             this.avecCargaison = false;
             return true;
         } else {
