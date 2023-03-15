@@ -1,283 +1,247 @@
-CREATE TABLE emp (
-  empno int PRIMARY KEY,
-  ename varchar(50),
-  job varchar(50),
-  mgr int,
-  hiredate date,
-  sal decimal(10, 2),
-  comm decimal(10, 2),
-  deptno int
+
+CREATE TABLE EMP (
+  EMPNO INT PRIMARY KEY,
+  ENAME VARCHAR(50),
+  JOB VARCHAR(50),
+  MGR INT,
+  HIREDATE DATE,
+  SAL INT,
+  COMM INT,
+  DEPTNO INT
 );
 
-
-ALTER TABLE emp
-ADD CONSTRAINT fk_emp_mgr
-FOREIGN KEY (mgr)
-REFERENCES emp(empno);
-
-CREATE TABLE dept (
-  deptno int PRIMARY KEY,
-  dname varchar(50),
-  loc varchar(50)
+CREATE TABLE DEPT (
+  DEPTNO INT PRIMARY KEY,
+  DNAME VARCHAR(50),
+  LOC VARCHAR(50)
 );
 
-/*EXERCICE 1
-*/
+ALTER TABLE EMP ADD FOREIGN KEY (MGR) REFERENCES EMP(EMPNO);
 
-SELECT ename, job, empno, sal FROM emp;
+INSERT INTO EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) VALUES 
+(7369, 'SMITH', 'CLERK', 7902, TO_DATE('17-DEC-80', 'DD-MON-YY'), 800, NULL, 20),
+(7499, 'ALLEN', 'SALESMAN', 7698, TO_DATE('20-FEV-81', 'DD-MON-YY'), 1600, 300, 30),
+(7521, 'WARD', 'SALESMAN', 7698, TO_DATE('22-FEV-81', 'DD-MON-YY'), 1250, 500, 30),
+(7566, 'JONES', 'MANAGER', 7839, TO_DATE('02-AVR-81', 'DD-MON-YY'), 2975, NULL, 20),
+(7654, 'MARTIN', 'SALESMAN', 7698, TO_DATE('28-SEP-81', 'DD-MON-YY'), 1250, 1400, 30),
+(7698, 'BLAKE', 'MANAGER', 7839, TO_DATE('01-MAI-81', 'DD-MON-YY'), 2850, NULL, 30),
+(7782, 'CLARK', 'MANAGER', 7839, TO_DATE('09-JUI-81', 'DD-MON-YY'), 2450, NULL, 10),
+(7788, 'SCOTT', 'ANALYST', 7566, TO_DATE('09-DEC-82', 'DD-MON-YY'), 3000, NULL, 20),
+(7839, 'KING', 'PRESIDENT', NULL, TO_DATE('17-NOV-81', 'DD-MON-YY'), 5000, NULL, 10),
+(7844, 'TURNER', 'SALESMAN', 7698, TO_DATE('08-SEP-81', 'DD-MON-YY'), 1500, 0, 30),
+(7876, 'ADAMS', 'CLERK', 7788, TO_DATE('12-JAN-83', 'DD-MON-YY'), 1100, NULL, 20),
+(7900, 'JAMES', 'CLERK', 7698, TO_DATE('03-DEC-81', 'DD-MON-YY'), 950, NULL, 30),
+(7902, 'FORD', 'ANALYST', 7566, TO_DATE('03-DEC-81', 'DD-MON-YY'), 3000, NULL, 20),
+(7934, 'MILLER', 'CLERK', 7782, TO_DATE('23-JAN-82', 'DD-MON-YY'), 1300, NULL, 10);
 
-SELECT ename, job, empno, sal 
-FROM emp 
-WHERE deptno = 10;
 
-/*EXERCICE 2*/
+SELECT ENAME, JOB, EMPNO, SAL
+FROM EMP
+WHERE DEPTNO = 10;
 
-SELECT ename, job, sal 
-FROM emp 
-WHERE job = 'MANAGER' AND sal > 2800;
-/*EXERCICE 3*/
+SELECT ENAME, JOB, SAL
+FROM EMP
+WHERE JOB = 'MANAGER' AND SAL > 2800;
 
-SELECT ename, job 
-FROM emp 
-WHERE job = 'MANAGER' AND deptno != 30;
+SELECT ENAME, JOB
+FROM EMP
+WHERE JOB = 'MANAGER' AND DEPTNO != 30;
 
-/*EXERCICE 4*/
-SELECT ename, job, sal 
-FROM emp 
-WHERE sal BETWEEN 1200 AND 1400;
+SELECT *
+FROM EMP
+WHERE SAL BETWEEN 1200 AND 1400;
 
-/*EXERCICE 5*/
-SELECT ename, job, deptno 
-FROM emp 
-WHERE deptno IN (10, 30) 
-ORDER BY ename ASC;
+SELECT ENAME, DEPTNO
+FROM EMP
+WHERE DEPTNO IN (10,30)
+ORDER BY ENAME;
 
-/*EXERCICE 6*/
+SELECT *
+FROM EMP
+WHERE DEPTNO = 30
+ORDER BY SAL ASC;
 
-SELECT ename, job, sal 
-FROM emp 
-WHERE deptno = 30 
-ORDER BY sal ASC;
+SELECT *
+FROM EMP
+ORDER BY JOB, SAL DESC;
 
-/*EXERCICE 7*/
+SELECT DISTINCT JOB
+FROM EMP;
 
-SELECT ename, job, sal 
-FROM emp 
-ORDER BY job ASC, sal DESC;
+SELECT DNAME
+FROM DEPT
+WHERE DEPTNO = (SELECT DEPTNO FROM EMP WHERE ENAME = 'ALLEN');
 
-/*EXERCICE 8*/
-SELECT DISTINCT JOB FROM emp;
+SELECT DNAME, ENAME, JOB, SAL
+FROM EMP
+JOIN DEPT ON EMP.DEPTNO = DEPT.DEPTNO
+ORDER BY DNAME, SAL DESC;
 
-/*EXERCICE 9*/
-SELECT d.DNAME
-FROM emp e
-JOIN dept d ON e.DEPTNO = d.DEPTNO
-WHERE e.ENAME = 'ALLEN';
-
-/*EXERCICE 9*/
-SELECT d.DNAME, e.ENAME, e.JOB, e.SAL
-FROM emp e
-JOIN dept d ON e.DEPTNO = d.DEPTNO
-WHERE e.JOB <> 'SALESMAN'
-ORDER BY d.DNAME, e.SAL DESC;
-/*EXERCICE 10*/
-SELECT d.DNAME, e.ENAME, e.JOB, e.SAL, (e.SAL + NVL(e.COMM, 0)) AS "SAL+COMM"
-FROM emp e
-JOIN dept d ON e.DEPTNO = d.DEPTNO
-ORDER BY d.DNAME ASC, e.SAL DESC;
-/*EXERCICE 11*/
-SELECT ENAME, SAL, COMM, (SAL + NVL(COMM, 0)) AS "SAL+COMM"
-FROM emp
+SELECT ENAME, SAL, COMM, SAL+COMM AS TOTAL_SALARY
+FROM EMP
 WHERE JOB = 'SALESMAN';
-/*EXERCICE 12*/
-SELECT ENAME, JOB, TO_CHAR(HIREDATE, 'DY DD MON YYYY', 'NLS_DATE_LANGUAGE = FRENCH') AS HIREDATE_FR
-FROM emp
+
+SELECT ENAME, JOB, 'VEN ' || TO_CHAR(HIREDATE, 'DD MON YYYY') AS "DATE D'EMBAUCHE"
+FROM EMP
 WHERE DEPTNO = 20;
 
-/*EXERCICE 13*/
 SELECT DEPTNO, MAX(SAL) AS MAX_SALARY
-FROM emp
+FROM EMP
 GROUP BY DEPTNO;
-/*EXERCICE 14*/
 
-SELECT d.DNAME, e.JOB, COUNT(*) AS NUM_EMPLOYEES, SUM(e.SAL) AS TOTAL_SALARY, AVG(e.SAL) AS AVG_SALARY
-FROM emp e
-JOIN dept d ON e.DEPTNO = d.DEPTNO
-GROUP BY d.DNAME, e.JOB;
+SELECT DEPTNO, COUNT(*) AS EMP_COUNT,
+SUM(SAL) AS TOTAL_SALARY,
+AVG(SAL) AS AVG_SALARY, JOB
+FROM EMP
+GROUP BY DEPTNO, JOB;
 
-/*EXERCICE 15*/
+SELECT DEPTNO, COUNT() AS EMP_COUNT,
+SUM(SAL) AS TOTAL_SALARY,
+AVG(SAL) AS AVG_SALARY, JOB
+FROM EMP
+WHERE DEPTNO IN (SELECT DEPTNO FROM EMP GROUP BY DEPTNO HAVING COUNT() >= 2)
+GROUP BY DEPTNO, JOB;
 
-SELECT d.DNAME, e.JOB, COUNT(*) AS NUM_EMPLOYEES, SUM(e.SAL) AS TOTAL_SALARY, AVG(e.SAL) AS AVG_SALARY
-FROM emp e
-JOIN dept d ON e.DEPTNO = d.DEPTNO
-WHERE e.DEPTNO IN (
-  SELECT DEPTNO
-  FROM emp
-  GROUP BY DEPTNO
-  HAVING COUNT(*) >= 2
-)
-GROUP BY d.DNAME, e.JOB;
+SELECT EMP.ENAME, DEPT.DNAME, EMP.SAL
+FROM EMP
+JOIN DEPT ON EMP.DEPTNO = DEPT.DEPTNO
+WHERE EMP.JOB = (SELECT JOB FROM EMP WHERE ENAME = 'JONES');
 
-
-/*EXERCICE 16*/
-SELECT JOB FROM EMP WHERE ENAME = 'JONES';
-
-/*EXERCICE 17*/
 SELECT ENAME, SAL
 FROM EMP
 WHERE SAL > (SELECT AVG(SAL) FROM EMP);
 
-SELECT ENAME, DNAME, SAL
-FROM EMP
-JOIN DEPT ON EMP.DEPTNO = DEPT.DEPTNO
-WHERE JOB = 'MANAGER';
-
-
-/*EXERCICE 18*/
 CREATE TABLE PROJET (
-   NUM_PROJ NUMBER(3) PRIMARY KEY,
-   NOM_PROJ VARCHAR2(5),
-   BUDGET NUMBER(8,2)
+  num_projet INTEGER(3) PRIMARY KEY,
+  nom_projet VARCHAR(5),
+  budget INTEGER
 );
-INSERT INTO PROJET (NUM_PROJ, NOM_PROJ, BUDGET)
-VALUES (101, 'ALPHA', 96000);
 
-INSERT INTO PROJET (NUM_PROJ, NOM_PROJ, BUDGET)
-VALUES (101, 'ALPHA', 96000);
+INSERT INTO PROJET (num_projet, nom_projet, budget)
+VALUES (101, 'ALPHA', 96000),
+       (102, 'BETA', 82000),
+       (103, 'GAMMA', 15000);
 
-INSERT INTO PROJET (NUM_PROJ, NOM_PROJ, BUDGET)
-VALUES (102, 'BETA', 82000);
 
-INSERT INTO PROJET (NUM_PROJ, NOM_PROJ, BUDGET)
-VALUES (103, 'GAMMA', 15000);
 
-ALTER TABLE EMP ADD NUM_PROJ NUMBER(3);
+ALTER TABLE EMP ADD num_projet INTEGER(3);
 
-UPDATE EMP
-SET NUM_PROJ = 
+UPDATE EMP SET num_projet = 
   CASE 
-    WHEN DEPTNO = 30 AND JOB = 'SALESMAN' THEN 101
+    WHEN deptno = 30 THEN 101
     ELSE 102
   END;
 
 
-  REATE VIEW EMPLOYEES_VIEW AS 
-SELECT E.ENAME, E.JOB, D.DNAME, P.NOM_PROJ 
-FROM EMP E
-INNER JOIN DEPT D ON E.DEPTNO = D.DEPTNO
-INNER JOIN PROJET P ON E.NUM_PROJ = P.NUM_PROJ;
-
-SELECT * 
-FROM EMPLOYEES_VIEW
-ORDER BY DNAME, NOM_PROJ;
-
-SELECT M.ENAME AS MANAGER_NAME, P.NOM_PROJ AS PROJECT_NAME
-FROM EMP M
-INNER JOIN EMP E ON M.EMPNO = E.MGR
-INNER JOIN PROJET P ON E.NUM_PROJ = P.NUM_PROJ;
-
-SELECT ename, sal
-FROM emp
-WHERE sal > (SELECT AVG(sal) FROM emp);
-
-
-CREATE TABLE PROJET (
-    PROJNO INT(3) PRIMARY KEY,
-    PROJNAME VARCHAR(5),
-    BUDGET INT(10)
-);
-
-INSERT INTO PROJET (PROJNO, PROJNAME, BUDGET) VALUES 
-    (101, 'ALPHA', 96000), 
-    (102, 'BETA', 82000), 
-    (103, 'GAMMA', 15000);
-
-
-ALTER TABLE emp ADD COLUMN projno INT(3);
-
-UPDATE emp SET projno = 
-    (CASE WHEN deptno = 30 AND job = 'SALESMAN' THEN 101 
-          ELSE 102 
-     END);
-
 CREATE VIEW emp_details AS 
-SELECT emp.ename, emp.job, dept.dname, projet.projname 
-FROM emp 
-JOIN dept ON emp.deptno = dept.deptno 
-JOIN projet ON emp.projno = projet.projno;
+SELECT e.ename, e.job, d.dname, p.nom_projet
+FROM EMP e 
+JOIN DEPT d ON e.deptno = d.deptno 
+JOIN PROJET p ON e.num_projet = p.num_projet;
 
-SELECT * 
+SELECT ename, job, dname, nom_projet 
 FROM emp_details 
-ORDER BY dname, projname;
+ORDER BY dname, nom_projet;
 
 
-SELECT emp.ename, projet.projname 
-FROM emp 
-JOIN projet ON emp.projno = projet.projno 
-WHERE emp.job = 'MANAGER';
+SELECT m.ename AS manager_name, p.nom_projet AS project_name
+FROM EMP m 
+JOIN EMP e ON m.empno = e.mgr 
+JOIN PROJET p ON e.num_projet = p.num_projet;
+
+/*partie 2*/
+
+SELECT DISTINCT manager
+FROM emp
+WHERE deptno IN (20, 30);
 
 SELECT *
 FROM emp
-WHERE deptno = 20
-AND hiredate IN (
-    SELECT hiredate
-    FROM emp
-    WHERE deptno = 30
-)
-
-
-
-SELECT ename, TO_CHAR(hiredate, 'DAY')
-FROM emp
-
-
-SELECT ename, MONTHS_BETWEEN(SYSDATE, hiredate) AS nb_months
-FROM emp
-
-
-
-SELECT ename
-FROM emp
-WHERE ename LIKE '%M%A%'
-
-
-SELECT ename
-FROM emp
-WHERE ename LIKE '%A%A%'
+WHERE job NOT LIKE '%MANAGER%' AND hiredate BETWEEN '01-JAN-81' AND '31-DEC-81';
 
 SELECT *
 FROM emp
-WHERE hiredate < ALL (
-    SELECT hiredate
-    FROM emp
-    WHERE deptno = 10
-)
+WHERE comm IS NOT NULL;
+
+SELECT ename, deptno, job, hiredate
+FROM emp
+ORDER BY deptno, job, hiredate DESC;
+
+SELECT *
+FROM emp
+WHERE loc = 'DALLAS';
+
+SELECT e.ename, e.hiredate, m.ename AS manager_name, m.hiredate AS manager_hiredate
+FROM emp e, emp m
+WHERE e.mgr = m.empno AND e.hiredate < m.hiredate;
+
+SELECT empno
+FROM emp
+WHERE empno NOT IN (SELECT mgr FROM emp);
+
+SELECT e.ename, e.hiredate
+FROM emp e, emp m
+WHERE e.hiredate < m.hiredate AND m.ename = 'BLAKE';
+
+SELECT *
+FROM emp
+WHERE hiredate = (SELECT hiredate FROM emp WHERE ename = 'FORD');
+
+SELECT *
+FROM emp
+WHERE mgr = (SELECT mgr FROM emp WHERE ename = 'CLARK');
+
+SELECT *
+FROM emp
+WHERE job = 'SALESMAN' AND mgr = (SELECT mgr FROM emp WHERE ename = 'TURNER');
+
+SELECT r.ename
+FROM emp r, emp s
+WHERE r.hiredate = s.hiredate AND r.deptno = 'RESEARCH' AND s.deptno = 'SALES';
+
+SELECT ename, to_char(hiredate, 'DAY') AS day_of_week
+FROM emp;
+
+SELECT ename, ROUND((MONTHS_BETWEEN(sysdate, hiredate)/12), 2) AS months_employed
+FROM emp;
+
+SELECT *
+FROM emp
+WHERE ename LIKE '%M%A%';
+
+SELECT *
+FROM emp
+WHERE ename LIKE '%A%A%';
+
+SELECT *
+FROM emp
+WHERE hiredate < ALL (SELECT hiredate FROM emp WHERE deptno = 10);
 
 SELECT job
 FROM emp
 GROUP BY job
-HAVING AVG(sal) = (
-    SELECT MIN(avg_sal)
-    FROM (
-        SELECT AVG(sal) AS avg_sal
-        FROM emp
-        GROUP BY job
-    )
-)
+HAVING AVG(sal) = (SELECT MIN(AVG(sal)) FROM emp GROUP BY job);
 
-SELECT deptno
+SELECT deptno, COUNT(*) AS num_employees
 FROM emp
 GROUP BY deptno
-HAVING COUNT(*) = (
-    SELECT MAX(count_dept)
-    FROM (
-        SELECT COUNT(*) AS count_dept
-        FROM emp
-        GROUP BY deptno
-    )
-)
+ORDER BY num_employees DESC
+FETCH FIRST 1 ROWS ONLY;
 
-SELECT deptno, ROUND(COUNT(*)*100/SUM(COUNT(*)) OVER(), 2) AS pct_emp
+SELECT deptno, ROUND((COUNT()/(SELECT COUNT() FROM emp)*100), 2) AS percentage_of_total_employees
 FROM emp
-GROUP BY deptno
-ORDER BY deptno
+GROUP BY deptno;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
