@@ -18,7 +18,7 @@ public class Robot {
         this.peutSeDeplacer = peutSeDeplacer;
         this.avecCargaison = avecCargaison;
     }
-
+    /**/
     private int calculerDistance() {
         Random rand = new Random();
 

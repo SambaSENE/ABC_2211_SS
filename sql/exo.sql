@@ -87,11 +87,12 @@ WHERE DEPTNO = 20;
 
 SELECT DEPTNO, MAX(SAL) AS MAX_SALARY
 FROM EMP
+JOIN dep ON emp.deptno = dept.deptno
 GROUP BY DEPTNO;
 
 SELECT DEPTNO, COUNT(*) AS EMP_COUNT,
-SUM(SAL) AS TOTAL_SALARY,
-AVG(SAL) AS AVG_SALARY, JOB
+        SUM(SAL) AS TOTAL_SALARY,
+        AVG(SAL) AS AVG_SALARY, JOB
 FROM EMP
 GROUP BY DEPTNO, JOB;
 
@@ -107,12 +108,12 @@ FROM EMP
 JOIN DEPT ON EMP.DEPTNO = DEPT.DEPTNO
 WHERE EMP.JOB = (SELECT JOB FROM EMP WHERE ENAME = 'JONES');
 
-SELECT ENAME, SAL
+SELECT ENAME, SAL , JOB,(SELECT AVG(SAL) FROM emp) AS 'Salaire moyenne'
 FROM EMP
 WHERE SAL > (SELECT AVG(SAL) FROM EMP);
 
 CREATE TABLE PROJET (
-  num_projet INTEGER(3) PRIMARY KEY,
+  num_projet INT PRIMARY KEY,
   nom_projet VARCHAR(5),
   budget INTEGER
 );
@@ -124,7 +125,7 @@ VALUES (101, 'ALPHA', 96000),
 
 
 
-ALTER TABLE EMP ADD num_projet INTEGER(3);
+ALTER TABLE EMP ADD  num_projet INTEGER(3);
 
 UPDATE EMP SET num_projet = 
   CASE 
@@ -179,17 +180,17 @@ SELECT empno
 FROM emp
 WHERE empno NOT IN (SELECT mgr FROM emp);
 
-SELECT e.ename, e.hiredate
-FROM emp e, emp m
-WHERE e.hiredate < m.hiredate AND m.ename = 'BLAKE';
+SELECT e.ENAME, e.HIREDATE
+FROM emp e , emp m
+WHERE e.HIREDATE < m.HIREDATE AND m.ENAME ='blake'
 
-SELECT *
-FROM emp
+SELECT e.ename, e.JOB , e.HIREDATE
+FROM emp e
 WHERE hiredate = (SELECT hiredate FROM emp WHERE ename = 'FORD');
 
-SELECT *
-FROM emp
-WHERE mgr = (SELECT mgr FROM emp WHERE ename = 'CLARK');
+SELECT ename , job , mgr
+FROM emp 
+WHERE deptno = (SELECT deptno FROM emp WHERE ename = 'CLARK') AND ename <> 'CLARK' AND mgr IS NOT NULL 
 
 SELECT *
 FROM emp
