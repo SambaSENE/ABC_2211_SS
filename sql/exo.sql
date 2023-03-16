@@ -172,13 +172,15 @@ SELECT *
 FROM emp
 WHERE loc = 'DALLAS';
 
-SELECT e.ename, e.hiredate, m.ename AS manager_name, m.hiredate AS manager_hiredate
+SELECT e.ename, e.hiredate, m.ename
+       AS manager_name, m.hiredate AS manager_hiredate
 FROM emp e, emp m
 WHERE e.mgr = m.empno AND e.hiredate < m.hiredate;
 
-SELECT empno
+SELECT emp.ENAME , emp.mgr
 FROM emp
-WHERE empno NOT IN (SELECT mgr FROM emp);
+WHERE empno NOT IN (SELECT DISTINCT  mgr FROM emp WHERE mgr IS NOT NULL );
+
 
 SELECT e.ENAME, e.HIREDATE
 FROM emp e , emp m
@@ -200,17 +202,22 @@ SELECT r.ename
 FROM emp r, emp s
 WHERE r.hiredate = s.hiredate AND r.deptno = 'RESEARCH' AND s.deptno = 'SALES';
 
-SELECT ename, to_char(hiredate, 'DAY') AS day_of_week
+
+
+
+SELECT ename, DATE_FORMAT (hiredate, '%a') AS day_of_week
 FROM emp;
 
 SELECT ename, ROUND((MONTHS_BETWEEN(sysdate, hiredate)/12), 2) AS months_employed
 FROM emp;
 
-SELECT *
+
+
+SELECT ename
 FROM emp
 WHERE ename LIKE '%M%A%';
 
-SELECT *
+SELECT ename
 FROM emp
 WHERE ename LIKE '%A%A%';
 
@@ -223,11 +230,11 @@ FROM emp
 GROUP BY job
 HAVING AVG(sal) = (SELECT MIN(AVG(sal)) FROM emp GROUP BY job);
 
-SELECT deptno, COUNT(*) AS num_employees
+SELECT deptno, COUNT(*) AS num
 FROM emp
 GROUP BY deptno
-ORDER BY num_employees DESC
-FETCH FIRST 1 ROWS ONLY;
+ORDER BY num DESC LIMIT 1;
+
 
 SELECT deptno, ROUND((COUNT()/(SELECT COUNT() FROM emp)*100), 2) AS percentage_of_total_employees
 FROM emp
