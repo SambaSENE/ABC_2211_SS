@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<voitures>
+    <voiture>
+        <marque>BMX</marque>
+        <modele>Serie 3</modele>
+        <moteur>6 CV</moteur>
+        <energie>Diesel</energie>
+        <boite_a_vitesse>Manuelle</boite_a_vitesse>
+        <puissance>116 ch</puissance>
+        <nb_tourMN>4000 trs/mn</nb_tourMN>
+
+    </voiture>
+    <voiture>
+        <marque>CITROEN </marque>
+        <modele>C3</modele>
+        <moteur>6CV</moteur>
+        <energie>Essence</energie>
+        <boite_a_vitesse>Automatique</boite_a_vitesse>
+        <puissance>110 ch</puissance>
+        <nb_tourMN>1500 trs/mn</nb_tourMN>
+
+
+    </voiture>
+    <voiture>
+        <marque>VOLKSWAGEN</marque>
+        <modele>Polo</modele>
+        <moteur>8 CV</moteur>
+        <energie>HYBRID RECHARGEABLE</energie>
+        <boite_a_vitesse></boite_a_vitesse>
+        <puissance>150 ch</puissance>
+        <nb_tourMN>1500 trs/mn</nb_tourMN>
+
+
+    </voiture>
+    <voiture>
+        <marque></marque>
+        <modele></modele>
+        <moteur></moteur>
+        <energie></energie>
+        <boite_a_vitesse></boite_a_vitesse>
+        <puissance></puissance>
+        <nb_Km></nb_Km>
+
+    </voiture>
+    <voiture>
+        <marque></marque>
+        <modele></modele>
+        <moteur></moteur>
+        <energie></energie>
+        <boite_a_vitesse></boite_a_vitesse>
+        <puissance></puissance>
+        <nb_Km></nb_Km>
+
+    </voiture>
+    <voiture>
+        <marque></marque>
+        <modele></modele>
+        <moteur></moteur>
+        <energie></energie>
+        <boite_a_vitesse></boite_a_vitesse>
+        <puissance></puissance>
+        <nb_Km></nb_Km>
+
+    </voiture>
+</voitures>

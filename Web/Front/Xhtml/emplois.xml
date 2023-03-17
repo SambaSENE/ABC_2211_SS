@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<emplois>
+    <offre>
+        <intilule>Leader technique PHP</intilule>
+        <ville>LA SEYNE SUR MER</ville>
+        <description>
+            Votre mission : Basé(e) au sein de l'unité de développement technique de la société, vous aurez pour mission de : 
+                            -	Assurer le développement de nouvelles fonctionnalités et l'amélioration continue de l'existant,
+                            -	Garantir la qualité de votre code dans l'application des méthodes Agiles, du respect des architectures techniques et la veille continue sur les nouvelles technologies,
+                            -	Rechercher les technologies et les modes de développement les plus adaptés pour assurer la sécurité
+        </description>
+        <competences>
+           
+            -	Frameworks : Symfony 6, React
+            -	Bases de données : MySQL
+            -	Versionning : Git
+        </competences>
+        <demarrage>immediate</demarrage>
+        <salaire_annuel>30 000 €</salaire_annuel>
+        <contact>contact@gmail.com</contact>
+    </offre>
+    <offre>
+        <intilule>Développeur / Développeuse web</intilule>
+        <ville>MARSEILLE</ville>
+        <description></description>
+        <competences>
+            -	Programmation Orientée Objet
+            -	ASP.Net Core MVC (C#)
+            -	Requêtes SQL Server (t-sql)
+            -	jQuery/HTML5/CSS
+
+        </competences>
+        <demarrage>04/04/2023</demarrage>
+        <salaire_annuel>38 000€</salaire_annuel>
+        <contact>jack@mart.fr</contact>
+    </offre>
+    <offre>
+        <intilule>Concepteur/trice - Developpeur/euse JAVA </intilule>
+        <ville>ST PIERRE</ville>
+        <description>
+            Rattaché(e) au directeur technique, vous interviendrez sur l'ensemble du cycle produit :
+            Analyse des exigences utilisateurs
+            Modélisation et conception de solutions efficientes et modulaires
+            Développement de services et d'interfaces utilisateur
+            Contrôle qualité de la production
+            Intégration de flux et de composants tiers
+            Support Niveau 3
+        </description>
+        <competences>
+            <Langages>
+                Java
+                Javascript
+                SQL
+                Html
+                CSS/Saas/Less
+                XML/Json
+            </Langages>
+            <Serveurs> 
+                Apache
+                IIS
+                Tomcat 
+            </Serveurs>
+            <Frameworks>
+                Spring
+                JPA
+                AngularJS
+            </Frameworks>
+            <Outils>
+                Eclipse/IntelliJ
+                Maven
+                NPM/Grunt/Bower
+                Jenkins
+                Git
+            </Outils>
+            <integration>
+                Camel
+                Message broker
+                HAPI
+                HL7
+                IHE
+                http
+            </integration>
+            <command>
+                Shell 
+                PowerShell
+            </command>
+            <architecture>
+                REST
+                MV* client
+                modélisation UML
+                Design Patterns
+            </architecture>
+        </competences>
+        <demarrage>immediate</demarrage>
+        <salaire_annuel>50 000€</salaire_annuel>
+        <contact>marie@gmail.com</contact>
+    </offre>
+</emplois>

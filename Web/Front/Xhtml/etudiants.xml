@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding ="UTF_8" ?>
+<etudiants>
+    <etudiant>
+        <nom>SENE</nom>
+        <prenom>Mouhamet</prenom>
+        <date_de_naissance>24-05-1987</date_de_naissance>
+        <email>msene@gmail.com</email>
+    </etudiant>
+    <etudiant>
+        <nom>hills</nom>
+        <prenom>Joseph</prenom>
+        <date_de_naissance>10-01-1990</date_de_naissance>
+        <email>jhills@outlook.fr</email>
+    </etudiant>
+    <etudiant>
+        <nom>ABLECH</nom>
+        <prenom>ANNAH</prenom>
+        <date_de_naissance>05-08-1987</date_de_naissance>
+        <email>aannah@icoud.com</email>
+    </etudiant>
+    <etudiant>
+        <nom>MILLER</nom>
+        <prenom>Marcus</prenom>
+        <date_de_naissance>22-06-1986</date_de_naissance>
+        <email>mmarcus@gmail.com</email>
+    </etudiant>
+    <etudiant>
+        <nom>PEARSON</nom>
+        <prenom>Oliver</prenom>
+        <date_de_naissance>24-01-1985</date_de_naissance>
+        <email>Opearson@gmail.com</email>
+    </etudiant>
+
+    <formation>
+        <matiere>Bases de données</matiere>
+        <duree>4 mois</duree>
+        <date_debut>20-03-2023</date_debut>
+        <date_fin>20-06-2023</date_fin>
+    </formation>
+  
+</etudiants>

@@ -1,0 +1,69 @@
+<?xml version= "1.0" encoding="UTF-8" ?>
+<menu>
+    <entree>
+        <titre>Dorade Grise Des Côtes Bretonnes</titre></br>
+        <ingredients>
+            En fines tranches légèrement marinées 
+            avocat Hass de Sicile façon condiment
+            vinaigrette aux pommes fruits et dentelle de sarrasin.
+        </ingredients>
+        <prix>15,00€</prix>
+    </entree>
+    <entree>
+        <titre>Aumônière de saumon</titre>
+        <ingredients>
+            pomme de terre
+            saumon
+            miel
+            champignon de paris 
+        </ingredients>
+        <prix>12,00</prix>
+    </entree>
+    <plat>
+        <titre>ANDOUILLETTE</titre>
+        <accompagnement>
+                sauce moutarde à l'ancienne(frites maison)
+        </accompagnement>
+        <prix>17,50€</prix>
+    </plat>
+    <plat>
+        <titre>FOIE DE VEAU PERSILLADE</titre>
+        <accompagnement>
+            sauce balsamique 
+            échalotes confites
+            purée de pommes de terre au beurre
+        </accompagnement>
+        <prix>23,50€</prix>
+         <supplement>
+            frites
+            riz
+            pommes de terre 
+        </supplement>
+    </plat>
+    <plat>
+        <titre>TARTARE DE BŒUF NORMAND</titre>
+        <accompagnement>frites maison</accompagnement>
+        <prix>19,50€</prix>
+    </plat>
+    <dessert>
+        <titre>PAVLOVA AUX FRUITS EXOTIQUES</titre>
+        <ingredients>
+            mangue
+            fruit de la passion
+            sorbet mangue
+        </ingredients>
+        <prix>11,50€</prix>
+       
+    </dessert>
+    <dessert>
+        <titre>SALADE D'AGRUMES</titre>
+        <ingredients>
+            pamplemousse
+            orange
+            kumquat confit
+            sorbet yuzu
+        </ingredients>
+        <prix>9,50€</prix>
+    </dessert>
+</menu>
+

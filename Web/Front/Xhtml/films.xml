@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<films>
+    <film>
+        <titre>The Fabelmans</titre>
+        <genre>Drame</genre>
+        <duree>2h31</duree>
+        <synopsis>Passionné de cinéma, Sammy Fabelman passe son temps à filmer sa famille.</synopsis>
+        <sortie>2023</sortie>
+        <realiser>Steven Spielberg</realiser>
+    </film>
+    <film>
+        <titre>La Syndicaliste</titre>
+        <genre>Drame</genre>
+        <duree>2h01</duree>
+        <synopsis>
+            Un matin, Maureen Kearney est violemment agressée chez elle.
+            Elle travaillait sur un dossier sensible dans le secteur nucléaire français et 
+            subissait de violentes pressions politiques.
+        </synopsis>
+        <sortie>2023</sortie>
+        <realiser>Jean-Paul Salomé</realiser>
+    </film>
+    <film>
+        <titre>The Son</titre>
+        <genre>Drame</genre>
+        <duree>2h03</duree>
+        <synopsis>
+            À 17 ans, Nicholas semble en pleine dérive, il n'est plus cet enfant lumineux qui souriait tout le temps. 
+            Que lui arrive-t-il ? Dépassée par la situation, sa mère accepte qu’il aille vivre chez son père, Peter. 
+            Remarié depuis peu et père d’un nouveau-né, il va tenter de dépasser l’incompréhension, 
+            la colère et l’impuissance dans l’espoir de retrouver son fils.
+
+        </synopsis>
+        <sortie>2023</sortie>
+        <realiser>Florian Zeller</realiser>
+    </film>
+    <film>
+        <titre>Creed III</titre>
+        <genre>Drame</genre>
+        <duree>1h56</duree>
+        <synopsis>
+            Idole de la boxe et entouré de sa famille, Adonis Creed n’a plus rien à prouver. 
+            Jusqu’au jour où son ami d’enfance, Damian, prodige de la boxe lui aussi, refait surface. À peine sorti de prison, 
+            Damian est prêt à tout pour monter sur le ring et reprendre ses droits. 
+            Adonis joue alors sa survie, face à un adversaire déterminé à l’anéantir.
+        </synopsis>
+        <sortie>2023</sortie>
+        <realiser>Michael B. Jordan</realiser>
+    </film>
+    <film>
+        <titre>Ant-Man et la Guêpe : Quantumania</titre>
+        <genre>Action / Aventure</genre>
+        <duree>2h05</duree>
+        <synopsis>
+            Les super-héros et partenaires Scott Lang et Hope Van Dyne – alias Ant-Man et la Guêpe – vont vivre de nouvelles péripéties. 
+            En compagnie de Hank Pym et Janet Van Dyne – les parents de Hope – le duo va explorer la dimension subatomique, interagir 
+            avec d'étranges nouvelles créatures et se lancer dans une odyssée qui les poussera au-delà des limites de ce qu'il pensait être possible.
+        </synopsis>
+        <sortie>2023</sortie>
+        <realiser> Peyton Reed</realiser>
+    </film>
+    <film>
+        <titre>Astérix et Obélix : L'Empire du Milieu</titre>
+        <genre>Comédie</genre>
+        <duree>1h51</duree>
+        <synopsis>
+            Nous sommes en 50 avant J.-C. L’Impératrice de Chine est emprisonnée suite à un coup d’État fomenté par Deng Tsin Quin, 
+            un prince félon. Aidée par Graindemaïs, le marchand phénicien, et par sa fidèle guerrière Tat Han, la princesse Fu Yi, 
+            fille unique de l’impératrice, s’enfuit en Gaule pour demander de l’aide aux deux valeureux guerriers Astérix et Obélix, 
+            dotés d’une force surhumaine grâce à leur potion magique. Nos deux inséparables Gaulois acceptent bien sûr de venir en 
+            aide à la Princesse pour sauver sa mère et libérer son pays. Et les voici tous en route pour une grande aventure vers la Chine. 
+            Mais César et sa puissante armée, toujours avide de conquêtes, ont eux aussi pris la direction de l’Empire du Milieu…
+        </synopsis>
+        <sortie>2023</sortie>
+        <realiser>Guillaume Canet</realiser>
+    </film>
+
+</films>
