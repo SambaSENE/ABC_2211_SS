@@ -33,34 +33,5 @@
 
 
     </voiture>
-    <voiture>
-        <marque></marque>
-        <modele></modele>
-        <moteur></moteur>
-        <energie></energie>
-        <boite_a_vitesse></boite_a_vitesse>
-        <puissance></puissance>
-        <nb_Km></nb_Km>
-
-    </voiture>
-    <voiture>
-        <marque></marque>
-        <modele></modele>
-        <moteur></moteur>
-        <energie></energie>
-        <boite_a_vitesse></boite_a_vitesse>
-        <puissance></puissance>
-        <nb_Km></nb_Km>
-
-    </voiture>
-    <voiture>
-        <marque></marque>
-        <modele></modele>
-        <moteur></moteur>
-        <energie></energie>
-        <boite_a_vitesse></boite_a_vitesse>
-        <puissance></puissance>
-        <nb_Km></nb_Km>
-
-    </voiture>
+    
 </voitures>
