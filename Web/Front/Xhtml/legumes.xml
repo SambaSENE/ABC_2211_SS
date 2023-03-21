@@ -14,8 +14,8 @@
             <legume>Salsifis</legume>
         </racines-tubercoles>
         
-    </categorie>
-        <legumes_verts>
+    </categorie type="Verte">
+       
             <legume>Épinard</legume>
             <legume>Laitue</legume>
             <legume>Chou frisé</legume>
@@ -28,19 +28,19 @@
             <legume>Fenouil</legume>
             <legume>Roquette</legume>
             <legume>Légumes à feuilles vertes (comme le kale)</legume>
-        </legumes_verts>
-    <categorie>
-        <legumes-feuille>
+       
+    <categorie type="feuille">
+        
             <legume>Artichaut</legume>
             <legume>Brocoli</legume>
            <legume> Chou-fleur</legume>
           <legume>  Céleri</legume>
            <legume> Asperge</legume>
            <legume> Rhubarbe</legume>
-        </legumes-feuille>
+        
     </categorie>
-    <categorie>
-        <legumes_fruits>
+    <categorie type="fruit">
+        
             <legume>Tomate</legume>
            <legume> Aubergine</legume>
             <legume>Concombre</legume>
@@ -49,7 +49,7 @@
            <legume> Courge</legume>
             <legume>Citrouille</legume>
             <legume>Olives</legume>
-        </legumes_fruits>
+        
     </categorie>
     <categorie>
         <legumeuses>
