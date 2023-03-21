@@ -17,7 +17,7 @@
             -	Versionning : Git
         </competences>
         <demarrage>immediate</demarrage>
-        <salaire_annuel>30 000 €</salaire_annuel>
+        <salaire annuel="Euro">30 000</salaire>
         <contact>contact@gmail.com</contact>
     </offre>
     <offre>
@@ -32,7 +32,7 @@
 
         </competences>
         <demarrage>04/04/2023</demarrage>
-        <salaire_annuel>38 000€</salaire_annuel>
+        <salaire annuel="Euro">38 000€</salaire>
         <contact>jack@mart.fr</contact>
     </offre>
     <offre>
@@ -93,7 +93,7 @@
             </architecture>
         </competences>
         <demarrage>immediate</demarrage>
-        <salaire_annuel>50 000€</salaire_annuel>
+        <salaire annuel="Euro">50 000€</salaire>
         <contact>marie@gmail.com</contact>
     </offre>
 </emplois>

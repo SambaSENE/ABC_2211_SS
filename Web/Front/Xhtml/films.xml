@@ -35,34 +35,28 @@
         <realiser>Florian Zeller</realiser>
     </film>
     <film>
-        <titre>Creed III</titre>
-        <genre>Drame</genre>
-        <duree>1h56</duree>
+        <titre duree="1h56" sortie="2023" realiser ="Michael B. Jordan" genre="Drame">Creed III</titre>
+       
         <synopsis>
             Idole de la boxe et entouré de sa famille, Adonis Creed n’a plus rien à prouver. 
             Jusqu’au jour où son ami d’enfance, Damian, prodige de la boxe lui aussi, refait surface. À peine sorti de prison, 
             Damian est prêt à tout pour monter sur le ring et reprendre ses droits. 
             Adonis joue alors sa survie, face à un adversaire déterminé à l’anéantir.
         </synopsis>
-        <sortie>2023</sortie>
-        <realiser>Michael B. Jordan</realiser>
     </film>
     <film>
-        <titre>Ant-Man et la Guêpe : Quantumania</titre>
-        <genre>Action / Aventure</genre>
-        <duree>2h05</duree>
+        <titre duree="2h05" sortie="2023" realiser="Peyton Reed" genre="Action / Aventure">Ant-Man et la Guêpe : Quantumania</titre>
+       
+        
         <synopsis>
             Les super-héros et partenaires Scott Lang et Hope Van Dyne – alias Ant-Man et la Guêpe – vont vivre de nouvelles péripéties. 
             En compagnie de Hank Pym et Janet Van Dyne – les parents de Hope – le duo va explorer la dimension subatomique, interagir 
             avec d'étranges nouvelles créatures et se lancer dans une odyssée qui les poussera au-delà des limites de ce qu'il pensait être possible.
         </synopsis>
-        <sortie>2023</sortie>
-        <realiser> Peyton Reed</realiser>
     </film>
     <film>
-        <titre>Astérix et Obélix : L'Empire du Milieu</titre>
-        <genre>Comédie</genre>
-        <duree>1h51</duree>
+        <titre duree="1h51" sortie="2023" realiser="Guillaume Canet"  genre="Comédie">Astérix et Obélix : L'Empire du Milieu</titre>
+        
         <synopsis>
             Nous sommes en 50 avant J.-C. L’Impératrice de Chine est emprisonnée suite à un coup d’État fomenté par Deng Tsin Quin, 
             un prince félon. Aidée par Graindemaïs, le marchand phénicien, et par sa fidèle guerrière Tat Han, la princesse Fu Yi, 
@@ -71,8 +65,7 @@
             aide à la Princesse pour sauver sa mère et libérer son pays. Et les voici tous en route pour une grande aventure vers la Chine. 
             Mais César et sa puissante armée, toujours avide de conquêtes, ont eux aussi pris la direction de l’Empire du Milieu…
         </synopsis>
-        <sortie>2023</sortie>
-        <realiser>Guillaume Canet</realiser>
+        
     </film>
 
 </films>

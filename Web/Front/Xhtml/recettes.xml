@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<recettes>
+    <recette>
+        <name>POULET RÔTI EN COCOTTE</name>
+        <ingredients>
+            pour 3 ,
+            1/2 poulet moyen,
+            300 g de carottes nouvelles,
+            1 noix de beurre,
+            1 petit oignon,
+            1 cs de farine ou fécule de maïs,
+            1 gros citron,
+            200 ml de crème liquide,
+            sel/poivre,
+            1/2 cc de curcuma,
+            persil
+        </ingredients>
+        <cuisson>
+            Dans une cocotte ou tout autre autocuiseur ,faire fondre le beurre
+            y faire dorer le poulet sur tous les côtés jusqu'à ce qu'il prenne une belle couleur dorée foncée
+            le récupérer et réserver ,ajouter l'oignon émincé finement, faire rissoler et laisser fondre
+            ajouter la cs de fécule et laisser prendre une couleur dorée,ajouter le poulet et les épices
+            ajouter 1 verre d'eau chaude,fermer la cocotte et laisser mijoter 15 mn
+            ouvrir la cocotte
+            ajouter les carottes coupées en biseaux
+            ajouter la crème, le jus du citron et 1 cs de persil ciselé
+            rectifier l'assaisonnement
+            fermer la cocotte et continuer la cuisson pendant 5 mn 
+            voir si le poulet est à point, sinon allonger le temps de cuisson
+            On doit avoir un petit fond de sauce liée
+            Servir  arrosé de la délicieuse sauce bien chaude avec l'accompagnement de votre choix, on s'est contenter de pain maison tout frais sorti du four.
+        </cuisson>
+    </recette>
+    <recette>
+        <ingredients></ingredients>
+        <cuisson></cuisson>
+    </recette>
+    <recette>
+        <ingredients></ingredients>
+        <cuisson></cuisson>
+    </recette>
+    <recette>
+        <ingredients></ingredients>
+        <cuisson></cuisson>
+    </recette>
+    <recette>
+        <ingredients></ingredients>
+        <cuisson></cuisson>
+    </recette>
+    <recette>
+        <ingredients></ingredients>
+        <cuisson></cuisson>
+    </recette>
+    <recette>
+        <ingredients></ingredients>
+        <cuisson></cuisson>
+    </recette>
+    <recette>
+        <ingredients></ingredients>
+        <cuisson></cuisson>
+    </recette>
+    <recette>
+        <ingredients></ingredients>
+        <cuisson></cuisson>
+    </recette>
+</recettes>

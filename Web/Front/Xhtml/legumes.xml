@@ -3,81 +3,79 @@
 <legumes>
     <categorie>
         <racines-tubercoles>
-            Panais
-            Navet
-            Rutabaga
-            Pomme de terre
-            Carotte
-            Igname
-            Radis
-            Betterave
-            Salsifis
+            <legume>Panais</legume>
+           <legume> Navet</legume>
+           <legume> Rutabaga</legume>
+           <legume> Pomme de terre</legume>
+           <legume> Carotte</legume>
+            <legume>Igname</legume>
+           <legume> Radis</legume>
+            <legume>Betterave</legume>
+            <legume>Salsifis</legume>
         </racines-tubercoles>
         
     </categorie>
         <legumes_verts>
-            Épinard
-            Laitue
-            Chou frisé
-            Chou-rave
-            Chou-fleur
-            Brocoli
-            Chou vert
-            Bette à carde (ou bette)
-            Cresson
-            Fenouil
-            Roquette
-            Légumes à feuilles vertes (comme le kale)
+            <legume>Épinard</legume>
+            <legume>Laitue</legume>
+            <legume>Chou frisé</legume>
+           <legume> Chou-rave</legume>
+            <legume>Chou-fleur</legume>
+           <legume> Brocoli</legume>
+            <legume>Chou vert</legume>
+            <legume>Bette à carde (ou bette)</legume>
+           <legume> Cresson</legume>
+            <legume>Fenouil</legume>
+            <legume>Roquette</legume>
+            <legume>Légumes à feuilles vertes (comme le kale)</legume>
         </legumes_verts>
     <categorie>
         <legumes-feuille>
-            Artichaut
-            Brocoli
-            Chou-fleur
-            Légumes à tiges :
-
-            Céleri
-            Asperge
-            Rhubarbe
+            <legume>Artichaut</legume>
+            <legume>Brocoli</legume>
+           <legume> Chou-fleur</legume>
+          <legume>  Céleri</legume>
+           <legume> Asperge</legume>
+           <legume> Rhubarbe</legume>
         </legumes-feuille>
     </categorie>
     <categorie>
         <legumes_fruits>
-            Tomate
-            Aubergine
-            Concombre
-            Courgette
-            Poivron
-            Courge
-            Citrouille
-            Olives
+            <legume>Tomate</legume>
+           <legume> Aubergine</legume>
+            <legume>Concombre</legume>
+           <legume> Courgette</legume>
+            <legume>Poivron</legume>
+           <legume> Courge</legume>
+            <legume>Citrouille</legume>
+            <legume>Olives</legume>
         </legumes_fruits>
     </categorie>
     <categorie>
         <legumeuses>
-            Haricot
-            Pois chiches
-            Lentilles
-            Fèves
-            Pois mange-tout
+            <legume>Haricot</legume>
+            <legume>Pois chiches</legume>
+            <legume>Lentilles</legume>
+            <legume>Fèves</legume>
+            <legume>Pois mange-tout</legume>
         
         </legumeuses>
     </categorie>
     <categorie>
         <legumes_racines_commestibles>
-            Gingembre
-            Radis noir
-            Topinambour
-            Raifort
+            <legume>Gingembre</legume>
+            <legume>Radis noir</legume>
+            <legume>Topinambour</legume>
+            <legume>Raifort</legume>
         </legumes_racines_commestibles>
     </categorie>
     <categorie>
         <legumes_feuilles>             
-            Epinard
-            Laitue
-            Mâche
-            Chicorée frisée
-            Chou vert
+            <legume>Epinard</legume>
+            <legume>Laitue</legume>
+            <legume>Mâche</legume>
+            <legume>Chicorée frisée</legume>
+            <legume>Chou vert</legume>
         </legumes_feuilles>
     </categorie>
 </legumes>
