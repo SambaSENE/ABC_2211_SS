@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <legumes>
-    <categorie>
-        <racines-tubercoles>
+    <categorie type="tubercoles">
+        
             <legume>Panais</legume>
            <legume> Navet</legume>
            <legume> Rutabaga</legume>
@@ -12,9 +12,9 @@
            <legume> Radis</legume>
             <legume>Betterave</legume>
             <legume>Salsifis</legume>
-        </racines-tubercoles>
         
-    </categorie type="Verte">
+      </categorie >   
+    <categorie type="Verte">
        
             <legume>Épinard</legume>
             <legume>Laitue</legume>
@@ -28,7 +28,7 @@
             <legume>Fenouil</legume>
             <legume>Roquette</legume>
             <legume>Légumes à feuilles vertes (comme le kale)</legume>
-       
+    </categorie>
     <categorie type="feuille">
         
             <legume>Artichaut</legume>
@@ -51,32 +51,32 @@
             <legume>Olives</legume>
         
     </categorie>
-    <categorie>
-        <legumeuses>
+    <categorie type="legumeuse">
+        
             <legume>Haricot</legume>
             <legume>Pois chiches</legume>
             <legume>Lentilles</legume>
             <legume>Fèves</legume>
             <legume>Pois mange-tout</legume>
         
-        </legumeuses>
+        
     </categorie>
-    <categorie>
-        <legumes_racines_commestibles>
+    <categorie type="racines_commestibles">
+        
             <legume>Gingembre</legume>
             <legume>Radis noir</legume>
             <legume>Topinambour</legume>
             <legume>Raifort</legume>
-        </legumes_racines_commestibles>
+        
     </categorie>
     <categorie>
-        <legumes_feuilles>             
+        <legumes type="feuilles">             
             <legume>Epinard</legume>
             <legume>Laitue</legume>
             <legume>Mâche</legume>
             <legume>Chicorée frisée</legume>
             <legume>Chou vert</legume>
-        </legumes_feuilles>
+        </legumes>
     </categorie>
 </legumes>
 

@@ -1,0 +1,51 @@
+{
+    "formation" : "develloper web et mobile" ,
+    "promotion" : 2023,
+    "duree" :  10,
+    "en_cours"  :  true,
+    "membre" :
+    [
+        {
+
+            "etudiant" : 
+            {
+                "nom" : "miller",
+                "prenom" :  "emile",
+                "date_de_naissance" :  "14/06/1990",
+                "email" :     "m.emile@gmail.com"        
+            
+            }
+            
+        },
+        {
+            "etudiant" :
+            {
+                "nom" : "mathieu",
+                "prenom" : "Sabrina",
+                "date_de_naissance" : "06/01/1986",
+                "email" : "m.sabrina@gmail.com "
+                
+            }
+        },
+        {
+            "etudiant" :
+            {
+                "nom" : "JORDAN",
+                "prenom" : "Michel",
+                "date_de_naissance" : "11/02/1986",
+                "email" : " jmichel@gmail.com"
+                
+            }
+        },
+        {
+            "etudiant" :
+            {
+                "nom" : "Mauris",
+                "prenom" : "Paul",
+                "date_de_naissance" : "10/12/1985",
+                "email" : " mpaul@gmail.com"
+                
+            }
+        }
+    ]
+}

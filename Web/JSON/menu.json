@@ -1,0 +1,56 @@
+{
+    "carte" : "niam-niam", 
+    "entree" :
+    [
+        {
+            "titre" : "Foie gras",
+            "prix" : 15.99,
+            "description" : "Foie gras d'oie avec sa tranche de pain d'épices" 
+            
+        },
+        {
+            "titre" : "tartare de boeuf",
+            "prix" : 32 ,
+            "description" :"tartare de boeuf originaire de france préparer minute"
+        }
+
+    ] ,
+    "plat" : 
+    [
+        {
+
+            "titre" : "Civet de biche",
+            "prix" :43 ,
+            "description" : "filet de banbi"
+        },
+
+       {
+        "titre" : "Saumon à l'oseille",
+        "prix"  :  46,
+        "description" :  "Pavé de saumon sauvage écossais et sa sauce à l'oseille du jardin"
+
+       },
+       {
+        "titre" : "Baeckeoffe de la mer",
+        "prix"  : 41,
+        "description" :  "Variante du mythique plat alsacien cuisiner aux 3 poissons"
+
+       }
+
+    ],
+
+    "Dessert" : 
+    [
+        {
+            "intitule" : "tiramisu" ,
+            "prix" : 24 ,
+            "description" : "Tiramisu à la créme de nos campagnes et à l'amaretto"
+        } ,
+
+        {
+            "intitule" : "Tarte aux poires de nos grands mère" ,
+            "prix" : 28 , 
+            "description" : "Tarte à la pate sablés pure beurre aux poires du jardin et à la poudre d'amandes"
+        }
+    ]
+}

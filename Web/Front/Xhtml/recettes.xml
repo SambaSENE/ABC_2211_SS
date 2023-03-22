@@ -4,7 +4,7 @@
     <recette>
         <name>POULET RÔTI EN COCOTTE</name>
         <ingredients>
-            pour 3 ,
+            <nombre>3</nombre>
             1/2 poulet moyen,
             300 g de carottes nouvelles,
             1 noix de beurre,
@@ -32,36 +32,5 @@
             Servir  arrosé de la délicieuse sauce bien chaude avec l'accompagnement de votre choix, on s'est contenter de pain maison tout frais sorti du four.
         </cuisson>
     </recette>
-    <recette>
-        <ingredients></ingredients>
-        <cuisson></cuisson>
-    </recette>
-    <recette>
-        <ingredients></ingredients>
-        <cuisson></cuisson>
-    </recette>
-    <recette>
-        <ingredients></ingredients>
-        <cuisson></cuisson>
-    </recette>
-    <recette>
-        <ingredients></ingredients>
-        <cuisson></cuisson>
-    </recette>
-    <recette>
-        <ingredients></ingredients>
-        <cuisson></cuisson>
-    </recette>
-    <recette>
-        <ingredients></ingredients>
-        <cuisson></cuisson>
-    </recette>
-    <recette>
-        <ingredients></ingredients>
-        <cuisson></cuisson>
-    </recette>
-    <recette>
-        <ingredients></ingredients>
-        <cuisson></cuisson>
-    </recette>
+    
 </recettes>
