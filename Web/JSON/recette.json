@@ -1,0 +1,21 @@
+{
+    "recette" : 
+    [
+        {
+            "crepe" : 
+            {
+                "type" :  "crêpe bretonnes",
+                "ingredients" : 
+                {
+                    "farine de froment" : "250 g",
+                    "beurre" : "50 g",
+                    "lait" : "50cl",
+                    "eau" : "10cl" ,
+                    "oeuf" : 4,
+                    "sucre en poudre" : "2 cuilleres",
+                    "sel" : "2 pincee"
+                } 
+            }
+        }
+    ]
+}

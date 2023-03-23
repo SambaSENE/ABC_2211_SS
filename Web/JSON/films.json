@@ -1,3 +1,78 @@
 {
-    
+    "sortie": 2023,
+    "projection" : "Avril",
+    "films": [
+        {
+            "film": {
+                "titre": "CREED ",
+                "duree": 116,
+                "genre": "action",
+                "projection": {
+                    "mardi": {
+                        "seance1": "13h00",
+                        "seance2": "15h00",
+                        "seance3": "20h00"
+                    },
+                    "mercredi": {
+                        "seance1": "14h00",
+                        "seance2": "16h00",
+                        "seance3": "20h00"
+                    },
+                    "samedi": {
+                        "seance1": "16h00",
+                        "seance2": "17h00",
+                        "seance3": "22h00"
+                    }
+                }
+            }
+        },
+        {
+            "film": {
+                "titre": "Apaches ",
+                "duree": "1h33",
+                "genre": "Drame",
+                "projection": {
+                    "mardi": {
+                        "seance1": "15h00",
+                        "seance2": "18h00",
+                        "seance3": "21h00"
+                    },
+                    "mercredi": {
+                        "seance1": "15h00",
+                        "seance2": "18h00",
+                        "seance3": "20h00"
+                    },
+                    "samedi": {
+                        "seance1": "15h00",
+                        "seance2": "18h00",
+                        "seance3": "22h00"
+                    }
+                }
+            }
+        },
+        {
+            "film": {
+                "titre": "Apaches ",
+                "duree": "1h33",
+                "genre": "Drame",
+                "projection": {
+                    "mardi": {
+                        "seance1": "15h00",
+                        "seance2": "18h00",
+                        "seance3": "21h00"
+                    },
+                    "mercredi": {
+                        "seance1": "15h00",
+                        "seance2": "18h00",
+                        "seance3": "20h00"
+                    },
+                    "samedi": {
+                        "seance1": "15h00",
+                        "seance2": "18h00",
+                        "seance3": "22h00"
+                    }
+                }
+            }
+        }
+    ]
 }

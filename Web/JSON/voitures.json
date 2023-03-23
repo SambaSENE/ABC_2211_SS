@@ -1,0 +1,50 @@
+{
+    "concessionnaire": "La tece",
+    "activite": "Vente et rachat",
+    "Occasion": [
+        {
+            "marque": [
+                {
+                    "renault": {
+                        "modele": "Austral",
+                        "nombre_km": 7000,
+                        "année mise ne circulation": 2022,
+                        "couleur": "Blanc",
+                        "boite a vitesse": "Manuelle",
+                        "Carburant": "essence"
+                    }
+                },
+                {
+                    "bmw": {
+                        "modele": "X1",
+                        "nombre_km": 45000,
+                        "année mise ne circulation": 2017,
+                        "couleur": "Noir",
+                        "boite a vitesse": "Manuelle",
+                        "Carburant": "essence"
+                    }
+                },
+                {
+                    "mercedes": {
+                        "modele": "GLC",
+                        "nombre_km": 1000,
+                        "année mise ne circulation": 2022,
+                        "couleur": "gris",
+                        "boite a vitesse": "auto",
+                        "Carburant": "hibryde rechargable"
+                    }
+                },
+                {
+                    "audi": {
+                        "modele": "Q3 sportBack",
+                        "nombre_km": 1500,
+                        "année mise ne circulation": 2021,
+                        "couleur": "rouge",
+                        "boite a vitesse": "auto",
+                        "Carburant": "hibryde rechargable"
+                    }
+                }
+            ]
+        }
+    ]
+}
