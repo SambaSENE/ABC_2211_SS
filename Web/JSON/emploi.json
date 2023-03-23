@@ -1,0 +1,50 @@
+{
+    "annee": 2023,
+    "metier": "developpeur",
+    "offres d'emploi": [
+    
+        {
+            "developpeur php": {
+                "intitule": "php",
+                "ville ": "Paris",
+                "date de demarage": "05/04/2023",
+                "salaire annuel": "45 000 €",
+                "email": "devdoc@gmail.com",
+                "description": " ",
+                "liste competences ": [
+                    "PHP",
+                    "Laravel",
+                    "NodeJs",
+                    "GraphQL",
+                    "VueJS",
+                    "MySQL",
+                    "Redis",
+                    "ElasticSearch",
+                    "Gitlab"
+                ]
+            },
+            "developpeur java": {
+                "intitule": "java",
+                "ville ": "MULHOUSE",
+                "date de demarage": "05/04/2023",
+                "salaire annuel": "35 000 €",
+                "email": "doc@gmail.com",
+                "description": " ",
+                "liste competences requises ": [
+                    "JavaScript",
+                    "Java",
+                    "SQL",
+                    "HTML5 (Bootstrap, Material design)"
+                ],
+                "Connaissances techniques appréciées": [
+                    "Backbone.js",
+                    "KendoUI.js",
+                    "Hibernate",
+                    "Spring",
+                    "Microsoft SQL Server",
+                    "Git"
+                ]
+            }
+        }
+    ]
+}

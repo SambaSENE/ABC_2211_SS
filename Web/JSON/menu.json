@@ -20,19 +20,19 @@
         {
 
             "titre" : "Civet de biche",
-            "prix" :43 ,
+            "prix" :20.99 ,
             "description" : "filet de banbi"
         },
 
        {
         "titre" : "Saumon à l'oseille",
-        "prix"  :  46,
+        "prix"  :  17.50,
         "description" :  "Pavé de saumon sauvage écossais et sa sauce à l'oseille du jardin"
 
        },
        {
         "titre" : "Baeckeoffe de la mer",
-        "prix"  : 41,
+        "prix"  : 14.99,
         "description" :  "Variante du mythique plat alsacien cuisiner aux 3 poissons"
 
        }
@@ -43,13 +43,13 @@
     [
         {
             "intitule" : "tiramisu" ,
-            "prix" : 24 ,
+            "prix" : 11.95 ,
             "description" : "Tiramisu à la créme de nos campagnes et à l'amaretto"
         } ,
 
         {
             "intitule" : "Tarte aux poires de nos grands mère" ,
-            "prix" : 28 , 
+            "prix" : 19.50 , 
             "description" : "Tarte à la pate sablés pure beurre aux poires du jardin et à la poudre d'amandes"
         }
     ]
