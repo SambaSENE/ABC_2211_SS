@@ -1,20 +1,38 @@
 {
-    "recette" : 
-    [
+    "recette": [
         {
-            "crepe" : 
-            {
-                "type" :  "crêpe bretonnes",
-                "ingredients" : 
-                {
-                    "farine de froment" : "250 g",
-                    "beurre" : "50 g",
-                    "lait" : "50cl",
-                    "eau" : "10cl" ,
-                    "oeuf" : 4,
-                    "sucre en poudre" : "2 cuilleres",
-                    "sel" : "2 pincee"
-                } 
+            "crepe": {
+                "type": "crêpe bretonnes",
+                "ingredients": {
+                    "farine de froment": "250 g",
+                    "beurre": "50 g",
+                    "lait": "50cl",
+                    "eau": "10cl",
+                    "oeuf": 4,
+                    "sucre en poudre": "2 cuilleres",
+                    "sel": "2 pincees"
+                },
+                "preparation": {
+                    "etapePreparation": {
+                        "dans le saladier": {
+                            "1": "dans un saladier",
+                            "2": "joutez la farine de froment",
+                            "3": "cuillères à soupe de sucre et une pincée de sel",
+                            "4": "Versez le lait puis l'eau progressivement tout en battant avec un fouet",
+                            "5": "rajoutez le beurre au préalablement fondu et les œufs pour finir",
+                            "6": "Laissez la pâte à crêpes reposer pendant 30 à 45 mn au frais",
+                            "7": "Utilisez une poêle à crêpes pour réaliser vos crepes bretonnes : graissez-la avec une noisette de beurre puis versez une louche de pâte",
+                            "8": "Faites cuire votre crêpe environ 2 mn par face, et retournez-la avec une spatule"
+                        }
+                    }
+                },
+                "Cuisson": {
+                    "1": "Faites chauffer la billig à environ 220°C, une fois la plaque bien chaude",
+                    "2": "graissez-la avec un tampon ou chiffon légèrement imbibé de beurre",
+                    "3": "Déposez une louche de pâte sur la crêpière et étalez-la à l'aide d'un râteau à crêpes (rozell en Breton)",
+                    "4": "Laissez cuire la crêpe pendant environ une minute puis retournez-la avec une spatule à crêpes",
+                    "5": "Continuez ainsi pour les crêpes suivantes mais n'oubliez pas de graisser votre billig régulièrement"
+                }
             }
         }
     ]
