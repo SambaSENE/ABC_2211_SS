@@ -20,8 +20,7 @@ public class Bouteille {
 
 	}
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 	public Bouteille() {
 		capaciteEnL = 1;
 		contenantEnL = 0.5;
@@ -29,10 +28,7 @@ public class Bouteille {
 		nom = " ";
 	}
 
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
 	// Methodes
 
 	public String getNom() {
@@ -46,8 +42,7 @@ public class Bouteille {
 			System.out.println("ouverte");
 			return true;
 		} else {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 			//this.estOuverte = false;
 			return false;
 		}
@@ -56,12 +51,10 @@ public class Bouteille {
 	public boolean ferme() {
 		if (estOuverte) {
 			this.estOuverte = false;
-=======
+
 			System.out.println("fermé");
->>>>>>> Stashed changes
-=======
-			System.out.println("fermé");
->>>>>>> Stashed changes
+
+
 			return false;
 		}
 	}
@@ -76,23 +69,18 @@ public class Bouteille {
 	public boolean remplir(double quantiteEnL) {
 		// double reste = capaciteEnL - contenantEnL;
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 		if (this.estOuverte) {
 			if (this.contenantEnL + quantiteEnL <= this.capaciteEnL) {
 				this.contenantEnL += quantiteEnL;
-=======
-		if (estOuverte) {
-			if (quantiteEnL + contenantEnL < capaciteEnL) {
-				System.out.println("c'est de la magie , la bouteille se remplit");
->>>>>>> Stashed changes
+
+		
 				return true;
 			} 
 		} 
 		return false;
 		
-=======
-		if (estOuverte) {
+	if (estOuverte) {
 			if (quantiteEnL + contenantEnL < capaciteEnL) {
 				System.out.println("c'est de la magie , la bouteille se remplit");
 				return true;
@@ -100,12 +88,12 @@ public class Bouteille {
 				System.out.println("On peut remplir la bouteille");
 				return false;
 			}
-		} else {
-			System.out.println("impossible de remplir");
-			return false;
-		}
+	} else {
+		System.out.println("impossible de remplir");
+		return false;
+	}
 
->>>>>>> Stashed changes
+
 	}
 
 	public boolean remplireTout() {
@@ -127,8 +115,7 @@ public class Bouteille {
 	public boolean vider() {
 		
 		if (estOuverte) {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 			if (capaciteEnL >= contenantEnL) {
 				if(quantiteEnL >=0 ) {
 					this.contenantEnL = this.contenantEnL -= quantiteEnL;
@@ -137,22 +124,18 @@ public class Bouteille {
 					return false;
 				}
 				
-				
-=======
-=======
->>>>>>> Stashed changes
+
 			if (capaciteEnL <= contenantEnL) {
 				contenantEnL -= quantiteEnL;
 				return true;
 			} else {
 				return false;
->>>>>>> Stashed changes
+
 			}
 		}return false ;
 	}
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 	public boolean viderTout() {
 		if (this.estOuverte) {
 			if (this.contenantEnL > 0) {
@@ -171,8 +154,6 @@ public class Bouteille {
 				+ nom;
 	}
 
-=======
->>>>>>> Stashed changes
-=======
+
 >>>>>>> Stashed changes
 }
